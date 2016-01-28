@@ -1,13 +1,11 @@
 
 
+function moveTechno() {
+$( ".technoh2" ).toggleClass('status1, status2')
+}
 function moveServices() {
-$( ".servh2" ).toggleClass('test2, test')
-
-
-// $( ".body" ).addClass('ofly-h')
-// $( ".close" ).addClass('x')
-// $( ".Single-post" ).addClass('respo-post')
-
+$( ".servicesh2" ).toggleClass('status1--services, status2--services')
 }
 	
-$( ".servh2" ).on( "click", moveServices )
+$( ".servicesh2" ).on( "click", moveServices )
+$( ".technoh2" ).on( "click", moveTechno )
