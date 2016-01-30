@@ -1,5 +1,5 @@
 .Layout
-	position relative
+	// position relative
 	&-title		
 		height: 95 vh
 		display: flex
@@ -12,10 +12,35 @@
 	&-techno
 		position: absolute
 		width: 33.33vw
-		bottom 1rem
+		bottom 1rem		
+		// text-align: center
 	&-techno		
-		z-index: 2		
-	h1
+		z-index: 2
+	&-techno_content
+	&-services_content
+	&-contact_content
+		position: absolute
+		top -75vh
+		left 1vw
+		z-index: 5
+		max-height: 65vh
+		overflow scroll
+		padding 2rem
+		width 30vw
+		border-left 1px solid black
+		// background-color alpha(black, .1)
+		li 
+			font-size: 1.3rem
+			margin-bottom 1rem
+			
+	&-services_content
+		left 64vw
+		border-right 1px solid black
+		border-left 0px solid black
+
+		text-align: right
+
+	&-h1
 		font-size: 3em
 		margin auto
 		padding-bottom 2em
@@ -27,6 +52,15 @@
 	margin-left 11.5vw	
 	text-align: center
 	transition: .2s
+	font-weight: 400
+	cursor pointer
+	font-size: 1.2rem
+.status1:hover
+	text-decoration: underline
+.status2:hover
+.status2--services:hover
+.status2--contact:hover	
+	text-decoration: none
 .status2
 	width 10vw
 	margin-left 1vw
@@ -37,11 +71,21 @@
 .status1--contact
 	margin-left 44.8vw	
 .status1--services
-	margin-left 78.1vw
-
+	margin-left 78.16vw
 .status2--contact
-	margin-left 44.8vw	
+	margin-left 44.8vw
+	
 .status2--services
-	margin-left 85vw
+	margin-left 89vw
 	margin-top -85vh
-	font-size 2rem	
+	font-size 2rem
+.status2--contact
+	margin-top -52vh
+	font-size 2rem
+.status3--contact
+	margin-top -75vh
+	transition: 1s
+.status2--logo
+	padding-bottom 8em
+	transition: 1s
+
