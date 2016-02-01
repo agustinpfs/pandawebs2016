@@ -16,6 +16,8 @@
 		// text-align: center
 	&-techno		
 		z-index: 2
+	&-contact
+		width: 98vw
 	&-techno_content
 	&-services_content
 	&-contact_content
@@ -26,8 +28,9 @@
 		max-height: 65vh
 		overflow scroll
 		padding 2rem
-		width 30vw
+		width 28vw
 		border-left 1px solid black
+		display: none
 		// background-color alpha(black, .1)
 		li 
 			font-size: 1.3rem
@@ -50,22 +53,22 @@
 .status1
 	width 10vw
 	margin-left 11.5vw	
-	text-align: center
-	transition: .2s
-	font-weight: 400
+	text-align center
+	transition .2s
+	font-weight 400
 	cursor pointer
-	font-size: 1.2rem
+	font-size 1.2rem
 .status1:hover
-	text-decoration: underline
+	text-decoration underline
 .status2:hover
 .status2--services:hover
 .status2--contact:hover	
-	text-decoration: none
+	text-decoration none
 .status2
 	width 10vw
 	margin-left 1vw
 	margin-top -85vh
-	transition: .2s
+	transition .2s
 	font-size 2rem	
 	
 .status1--contact
@@ -84,8 +87,16 @@
 	font-size 2rem
 .status3--contact
 	margin-top -75vh
-	transition: 1s
+	transition 1s
 .status2--logo
 	padding-bottom 8em
-	transition: 1s
-
+	transition 1s
+.icon-logo1
+	width 5vw
+	position: absolute
+	left 0
+	right 0
+	margin-left auto
+	margin-right auto
+	top 1.5rem
+	display none
