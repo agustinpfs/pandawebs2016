@@ -2,7 +2,8 @@
 	background-color black
 	color white
 	position: absolute
-	width: 98%
+	right 0
+	left 0
 	top 110vh
 	display flex
 	justify-content: space-between
@@ -86,5 +87,20 @@
 
 
 @media (max-width: 850px)
-	.Footer-center
-		display none
+	.Footer
+		&-center
+			display none
+			
+@media (max-width: 550px)
+	.Footer
+		flex-direction: column
+		&-left
+			order 2
+			margin-top 2rem
+		&-social
+			ul
+				width 55vw
+				margin-bottom 1rem
+		&-leyend
+			p 
+				display: none

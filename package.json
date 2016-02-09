@@ -1,7 +1,15 @@
- {
- 	"scripts": {
- 	"jade": "jade --watch --pretty lib/*.jade --out .",
+{
+  "scripts": {
+    "jade": "jade --watch --pretty lib/*.jade --out .",
     "styl": "stylus --use nib --compress --watch lib/style.styl --out public/css",
+    "build-js": "NODE_PATH=. browserify -t jadeify ./lib/app.js > ./public/app.js",
     "serve": "http-server ."
+  },
+  "dependencies": {
+    "browserify": "^13.0.0",
+    "jade": "^1.11.0",
+    "jadeify": "^4.6.0",
+    "jquery": "^2.2.0",
+    "page": "^1.6.4"
   }
 }

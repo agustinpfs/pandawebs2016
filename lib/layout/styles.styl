@@ -1,5 +1,6 @@
 .Layout
-	
+	width 100vw
+	overflow: hidden
 	.description 
 		margin-left 135px
 		text-transform: uppercase
@@ -7,7 +8,7 @@
 			
 	// position relative
 	&-title		
-		height: 95 vh
+		height: 95vh
 		display: flex
 	&-navTop
 		position: absolute
@@ -18,12 +19,13 @@
 	&-techno
 		position: absolute
 		width: 33.33vw
-		bottom 1rem		
+		bottom 1rem	
+		// overflow: hidden	
 		// text-align: center
 	&-techno		
 		z-index: 2
 	&-contact
-		width: 98vw
+		width: 100vw
 	&-techno_content
 	&-services_content
 	&-contact_content
@@ -56,16 +58,33 @@
 		margin auto
 		padding-bottom 2em
 		text-transform: uppercase
+	&-footer
+		width: 100%
+		background-color black
+		overflow: hidden
 		
 
 .status1
-	width 10vw
-	margin-left 11.5vw	
+	width 120px
+	margin-left auto
+	margin-right auto
 	text-align center
 	transition .2s
 	font-weight 400
 	cursor pointer
 	font-size 1.2rem
+	
+	// width: 120px
+ //    position: absolute
+ //    margin-left: auto
+ //    margin-right: auto
+ //    right: 0
+ //    left: 0
+ //    /* text-align: center */
+ //    transition: .2s
+ //    font-weight: 400
+ //    cursor: pointer
+ //    font-size: 1.2rem
 .status1:hover
 	text-decoration underline
 .status2:hover
@@ -73,7 +92,6 @@
 .status2--contact:hover	
 	text-decoration none
 .status2
-	width 10vw
 	margin-left 3vw
 	margin-top -85vh
 	transition .2s
@@ -86,11 +104,11 @@
 	font-family: 'icomoon' !important
 	
 .status1--contact
-	margin-left 44.8vw	
+	margin-left auto	
 .status1--services
-	margin-left 78.16vw
-.status2--contact
-	margin-left 44.8vw
+	margin-left 70vw
+// .status2--contact
+// 	margin-left 44.8vw
 	
 .status2--services
 	margin-left 85vw
@@ -123,7 +141,16 @@
 	bottom 83vh
 	display none
 	font-size: 4rem
+
+
 	
+// @media (max-width: 850px)
+// 	.technoh2
+// 		margin-right 0
+// 	.status1--services
+// 		margin-left 0
+
+		
 @media (max-width: 600px)
 	.Layout
 		&-navTop
@@ -131,3 +158,12 @@
 			right 0
 			top 0
 			background-color black
+		&-techno_content
+		&-services_content
+			width 83vw
+			background-color white
+			left 8vw
+			text-align: left
+	.status2
+	.status2--services
+		margin-left 13vw
