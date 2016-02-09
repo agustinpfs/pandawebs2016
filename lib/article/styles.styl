@@ -1,19 +1,41 @@
 .Article
 	display flex 
-	margin-top 1rem
+	margin-bottom 3rem
+	width: 48%
+	a 
+		color white
 	&-shot		
 		width: 250px
 		height: 250px
 		position: relative
-		overflow: hidden
+		overflow: hidden		
+		cursor: pointer 
 		&_footer
 			position: absolute
+			text-align: center
 			background-color black
-			width: 100%
-			color white
+			width: 100%			
 			bottom 0
 			font-size: 1.5rem
 			z-index: 1
 		&_opacity
 			position: absolute
-			background-color alpha(black, .5)
+			background-color alpha(black, .2)
+			width: 100%
+			height: 100%
+			top 0
+			display: flex
+			font-size: 0rem
+			transition: .2s
+			span
+				margin auto				
+				
+		&_opacity:hover				
+				font-size: 1.5rem
+				background-color alpha(black, .8)
+	&-description
+		width 55%
+		padding-left .5rem
+		p 
+			margin 0
+			padding: 0

@@ -113,7 +113,7 @@ buf.push("<div class=\"Portfolio\"><div class=\"Portfolio-header\"><div class=\"
     for (var $index = 0, $$l = $$obj.length; $index < $$l; $index++) {
       var article = $$obj[$index];
 
-buf.push("<div class=\"Article\"><div class=\"Article-shot\"><figure><img src=\"public/assets/img/shot-rev.png\" alt=\"\"/></figure><div class=\"Article-shot_footer\"><span> \ncaptura</span></div><div class=\"Article-shot_opacity\"></div></div><div class=\"Article-description\"><p>hola que poquito faso guallevá!</p></div></div>");
+buf.push("<div class=\"Article\"><div class=\"Article-shot\"><a href=\"\"><figure><img src=\"public/assets/img/shot-rev.png\" alt=\"\"/></figure><div class=\"Article-shot_footer\"><span> \ncaptura</span></div><div class=\"Article-shot_opacity\"><span>visit\t</span></div></a></div><div class=\"Article-description\"><h2>Revolution</h2><p>Sitio web adaptable a dispositivos móviles.\nCuenta con animaciones en 3D y sitema interactivo para la elección del producto.</p><h3>Tecnologías</h3><ul><li>HTML5</li><li>Css3</li><li>Javascript</li><li>JQuery</li><li>Css3</li><li>Css3</li></ul><button>visitar sitio</button><button>visitar código</button></div></div>");
     }
 
   } else {
@@ -121,7 +121,7 @@ buf.push("<div class=\"Article\"><div class=\"Article-shot\"><figure><img src=\"
     for (var $index in $$obj) {
       $$l++;      var article = $$obj[$index];
 
-buf.push("<div class=\"Article\"><div class=\"Article-shot\"><figure><img src=\"public/assets/img/shot-rev.png\" alt=\"\"/></figure><div class=\"Article-shot_footer\"><span> \ncaptura</span></div><div class=\"Article-shot_opacity\"></div></div><div class=\"Article-description\"><p>hola que poquito faso guallevá!</p></div></div>");
+buf.push("<div class=\"Article\"><div class=\"Article-shot\"><a href=\"\"><figure><img src=\"public/assets/img/shot-rev.png\" alt=\"\"/></figure><div class=\"Article-shot_footer\"><span> \ncaptura</span></div><div class=\"Article-shot_opacity\"><span>visit\t</span></div></a></div><div class=\"Article-description\"><h2>Revolution</h2><p>Sitio web adaptable a dispositivos móviles.\nCuenta con animaciones en 3D y sitema interactivo para la elección del producto.</p><h3>Tecnologías</h3><ul><li>HTML5</li><li>Css3</li><li>Javascript</li><li>JQuery</li><li>Css3</li><li>Css3</li></ul><button>visitar sitio</button><button>visitar código</button></div></div>");
     }
 
   }
