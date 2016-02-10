@@ -103,7 +103,7 @@ module.exports = function template(locals) {
 var buf = [];
 var jade_mixins = {};
 var jade_interp;
-;var locals_for_with = (locals || {});(function (ar, book, undefined) {
+;var locals_for_with = (locals || {});(function (undefined) {
 buf.push("<div class=\"Portfolio\"><div class=\"Portfolio-header\"><div class=\"Header\"><div class=\"Header-logo\"><figure><img src=\"\" alt=\"\"/></figure><h1>Pandawebs</h1><span>desarrollo web</span></div><div class=\"Header-menu\"><nav><ul><li>link</li><li>link</li><li>link</li><li>link</li><li>link</li></ul></nav></div></div></div><div class=\"Portofolio-main\">");
 // iterate ['Revolution', 'lkjdsghf', 'ksajdfgh', 'uuuuuuuu', 'popopop']
 ;(function(){
@@ -113,7 +113,7 @@ buf.push("<div class=\"Portfolio\"><div class=\"Portfolio-header\"><div class=\"
     for (var $index = 0, $$l = $$obj.length; $index < $$l; $index++) {
       var artic = $$obj[$index];
 
-buf.push("<div class=\"Article\"><div class=\"Article-shot\"><a href=\"\"><figure><img src=\"public/assets/img/shot-rev.png\" alt=\"\"/></figure><div class=\"Article-shot_footer\"><span>" + (jade.escape(null == (jade_interp = artic) ? "" : jade_interp)) + "</span></div><div class=\"Article-shot_opacity\"><span>" + (jade.escape(null == (jade_interp = artic) ? "" : jade_interp)) + "</span></div></a></div><div class=\"Article-description\"><h2>" + (jade.escape(null == (jade_interp = book.name) ? "" : jade_interp)) + "</h2><p>" + (jade.escape(null == (jade_interp = ar) ? "" : jade_interp)) + "</p><h3>Tecnologías</h3><ul><li>HTML5</li><li>Css3</li><li>Javascript</li><li>JQuery</li><li>Css3</li><li>Css3</li></ul><button>visitar sitio</button><button>visitar código</button></div></div>");
+buf.push("<div class=\"Article\"><div class=\"Article-shot\"><a href=\"\"><figure><img src=\"public/assets/img/shot-rev.png\" alt=\"\"/></figure><div class=\"Article-shot_footer\"><span>" + (jade.escape(null == (jade_interp = artic) ? "" : jade_interp)) + "</span></div><div class=\"Article-shot_opacity\"><span>" + (jade.escape(null == (jade_interp = artic) ? "" : jade_interp)) + "</span></div></a></div><div class=\"Article-description\"><h2>Revolution</h2><p>Sitio web adaptable a dispositivos móviles.\nCuenta con animaciones en 3D y sitema interactivo para la elección del producto.</p><h3>Tecnologías</h3><ul><li>HTML5</li><li>Css3</li><li>Javascript</li><li>JQuery</li><li>Css3</li><li>Css3</li></ul><button>visitar sitio</button><button>visitar código</button></div></div>");
     }
 
   } else {
@@ -121,13 +121,13 @@ buf.push("<div class=\"Article\"><div class=\"Article-shot\"><a href=\"\"><figur
     for (var $index in $$obj) {
       $$l++;      var artic = $$obj[$index];
 
-buf.push("<div class=\"Article\"><div class=\"Article-shot\"><a href=\"\"><figure><img src=\"public/assets/img/shot-rev.png\" alt=\"\"/></figure><div class=\"Article-shot_footer\"><span>" + (jade.escape(null == (jade_interp = artic) ? "" : jade_interp)) + "</span></div><div class=\"Article-shot_opacity\"><span>" + (jade.escape(null == (jade_interp = artic) ? "" : jade_interp)) + "</span></div></a></div><div class=\"Article-description\"><h2>" + (jade.escape(null == (jade_interp = book.name) ? "" : jade_interp)) + "</h2><p>" + (jade.escape(null == (jade_interp = ar) ? "" : jade_interp)) + "</p><h3>Tecnologías</h3><ul><li>HTML5</li><li>Css3</li><li>Javascript</li><li>JQuery</li><li>Css3</li><li>Css3</li></ul><button>visitar sitio</button><button>visitar código</button></div></div>");
+buf.push("<div class=\"Article\"><div class=\"Article-shot\"><a href=\"\"><figure><img src=\"public/assets/img/shot-rev.png\" alt=\"\"/></figure><div class=\"Article-shot_footer\"><span>" + (jade.escape(null == (jade_interp = artic) ? "" : jade_interp)) + "</span></div><div class=\"Article-shot_opacity\"><span>" + (jade.escape(null == (jade_interp = artic) ? "" : jade_interp)) + "</span></div></a></div><div class=\"Article-description\"><h2>Revolution</h2><p>Sitio web adaptable a dispositivos móviles.\nCuenta con animaciones en 3D y sitema interactivo para la elección del producto.</p><h3>Tecnologías</h3><ul><li>HTML5</li><li>Css3</li><li>Javascript</li><li>JQuery</li><li>Css3</li><li>Css3</li></ul><button>visitar sitio</button><button>visitar código</button></div></div>");
     }
 
   }
 }).call(this);
 
-buf.push("</div><div class=\"Portofolio-footer\"></div></div>");}.call(this,"ar" in locals_for_with?locals_for_with.ar:typeof ar!=="undefined"?ar:undefined,"book" in locals_for_with?locals_for_with.book:typeof book!=="undefined"?book:undefined,"undefined" in locals_for_with?locals_for_with.undefined:typeof undefined!=="undefined"?undefined:undefined));;return buf.join("");
+buf.push("</div><div class=\"Portofolio-footer\"></div></div>");}.call(this,"undefined" in locals_for_with?locals_for_with.undefined:typeof undefined!=="undefined"?undefined:undefined));;return buf.join("");
 };
 },{"jade/runtime":8}],6:[function(require,module,exports){
 
