@@ -1,7 +1,13 @@
+mixin article(art)
+	.Article
+		h1=art.titlee
+		h2=art.subtitle
+		p=art.contentt
+
 .Portfolio
 	.Portfolio-header
 		include ../header/template.jade
 	.Portofolio-main
-		each artic in ['Revolution', 'lkjdsghf', 'ksajdfgh', 'uuuuuuuu', 'popopop']
-			include ../article/template.jade
+		each art in [{titlee: 'HTL', subtitle: 'Core', contentt: 'Lorem ipsum'},{titlee: 'HTML', subtitle: 'Core', contentt: 'Lorem um'}]
+			+article(art)
 	.Portofolio-footer

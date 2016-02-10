@@ -104,24 +104,28 @@ var buf = [];
 var jade_mixins = {};
 var jade_interp;
 ;var locals_for_with = (locals || {});(function (undefined) {
+jade_mixins["article"] = jade_interp = function(art){
+var block = (this && this.block), attributes = (this && this.attributes) || {};
+buf.push("<div class=\"Article\"><h1>" + (jade.escape(null == (jade_interp = art.titlee) ? "" : jade_interp)) + "</h1><h2>" + (jade.escape(null == (jade_interp = art.subtitle) ? "" : jade_interp)) + "</h2><p>" + (jade.escape(null == (jade_interp = art.contentt) ? "" : jade_interp)) + "</p></div>");
+};
 buf.push("<div class=\"Portfolio\"><div class=\"Portfolio-header\"><div class=\"Header\"><div class=\"Header-logo\"><figure><img src=\"\" alt=\"\"/></figure><h1>Pandawebs</h1><span>desarrollo web</span></div><div class=\"Header-menu\"><nav><ul><li>link</li><li>link</li><li>link</li><li>link</li><li>link</li></ul></nav></div></div></div><div class=\"Portofolio-main\">");
-// iterate ['Revolution', 'lkjdsghf', 'ksajdfgh', 'uuuuuuuu', 'popopop']
+// iterate [{titlee: 'HTL', subtitle: 'Core', contentt: 'Lorem ipsum'},{titlee: 'HTML', subtitle: 'Core', contentt: 'Lorem um'}]
 ;(function(){
-  var $$obj = ['Revolution', 'lkjdsghf', 'ksajdfgh', 'uuuuuuuu', 'popopop'];
+  var $$obj = [{titlee: 'HTL', subtitle: 'Core', contentt: 'Lorem ipsum'},{titlee: 'HTML', subtitle: 'Core', contentt: 'Lorem um'}];
   if ('number' == typeof $$obj.length) {
 
     for (var $index = 0, $$l = $$obj.length; $index < $$l; $index++) {
-      var artic = $$obj[$index];
+      var art = $$obj[$index];
 
-buf.push("<div class=\"Article\"><div class=\"Article-shot\"><a href=\"\"><figure><img src=\"public/assets/img/shot-rev.png\" alt=\"\"/></figure><div class=\"Article-shot_footer\"><span>" + (jade.escape(null == (jade_interp = artic) ? "" : jade_interp)) + "</span></div><div class=\"Article-shot_opacity\"><span>" + (jade.escape(null == (jade_interp = artic) ? "" : jade_interp)) + "</span></div></a></div><div class=\"Article-description\"><h2>Revolution</h2><p>Sitio web adaptable a dispositivos móviles.\nCuenta con animaciones en 3D y sitema interactivo para la elección del producto.</p><h3>Tecnologías</h3><ul><li>HTML5</li><li>Css3</li><li>Javascript</li><li>JQuery</li><li>Css3</li><li>Css3</li></ul><button>visitar sitio</button><button>visitar código</button></div></div>");
+jade_mixins["article"](art);
     }
 
   } else {
     var $$l = 0;
     for (var $index in $$obj) {
-      $$l++;      var artic = $$obj[$index];
+      $$l++;      var art = $$obj[$index];
 
-buf.push("<div class=\"Article\"><div class=\"Article-shot\"><a href=\"\"><figure><img src=\"public/assets/img/shot-rev.png\" alt=\"\"/></figure><div class=\"Article-shot_footer\"><span>" + (jade.escape(null == (jade_interp = artic) ? "" : jade_interp)) + "</span></div><div class=\"Article-shot_opacity\"><span>" + (jade.escape(null == (jade_interp = artic) ? "" : jade_interp)) + "</span></div></a></div><div class=\"Article-description\"><h2>Revolution</h2><p>Sitio web adaptable a dispositivos móviles.\nCuenta con animaciones en 3D y sitema interactivo para la elección del producto.</p><h3>Tecnologías</h3><ul><li>HTML5</li><li>Css3</li><li>Javascript</li><li>JQuery</li><li>Css3</li><li>Css3</li></ul><button>visitar sitio</button><button>visitar código</button></div></div>");
+jade_mixins["article"](art);
     }
 
   }
