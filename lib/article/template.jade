@@ -1,24 +1,80 @@
-.Article
-	.Article-shot
-		a(href="")
-			figure
-				img(src="public/assets/img/shot-rev.png", alt="")
-			.Article-shot_footer
-				span=artic
-			.Article-shot_opacity
-				span=artic
-	.Article-description
-		h2 Revolution
-		p
-			| Sitio web adaptable a dispositivos móviles.
-			| Cuenta con animaciones en 3D y sitema interactivo para la elección del producto.
-		h3 Tecnologías
-		ul
-			li HTML5
-			li Css3
-			li Javascript
-			li JQuery
-			li Css3
-			li Css3
-		button visitar sitio
-		button visitar código
+mixin article(art)
+
+	.Article
+		.Article-shot
+			a(href="")
+				figure
+					img(src=art.image)
+				.Article-shot_footer
+					span=art.title
+				.Article-shot_opacity
+					span VISITAR
+		.Article-description
+			h2=art.title
+			p=art.description
+			h3 Tecnologías
+			ul
+				li=art.tech1
+				li=art.tech2
+				li=art.tech3	
+				li=art.tech4	
+				li=art.tech5
+				li=art.tech1
+				li=art.tech2
+				li=art.tech3	
+				li=art.tech4	
+				li=art.tech5
+				li=art.tech1
+				li=art.tech2
+				li=art.tech3	
+				li=art.tech4	
+				li=art.tech5	
+			button visitar sitio
+			button visitar código
+
+
+
+//- VARIABLES:
+
+//- DESCRIPTION
+
+- revolution = "Sitio web adaptable a dispositivos móviles. Cuenta con animaciones en 3D y sitema interactivo para la elección del producto."
+- hito = "Sitio basado en una navegación de transiciones por las diferentes secciones, invitando al usuario a un recorrido amigable de las páginas."
+- vem = "Sit amet, consectetur adipisicing elit. Voluptatibus rem sit quisquam, illo sint, in dolore ipsum quos delectus fugit quam voluptatum voluptate dolorem ipsam."
+- sc = "Consectetur adipisicing elit. Enim, esse. Perferendis animi qui cumque mollitia quaerat quas nostrum earum, voluptas labore vel! Voluptate porro molestiae voluptatem, quidem?"
+- pw = "Consectetur adipisicing elit. Enim, esse. Perferendis animi qui cumque mollitia quaerat quas nostrum earum, voluptas labore vel! Voluptate porro molestiae voluptatem, quidem?"
+
+//- TITLES
+
+- r = 'REVOLUTION'
+- h = 'HITO'
+- v = 'VIVIR EN MEDITACIÓN'
+- s = 'SANTIAGO CLAVIJO'
+- p = 'PANDAWEBS'
+
+//- TECHNOLOGIES
+
+- html = "HTML5"
+- css = "CSS3"
+- js = "Javascript"
+- rd = "Responsive Design"
+
+//- LINKS:
+
+//- IMAGES
+
+- revolutioni = 'public/assets/img/shot-rev.png'
+- hitoi = 'public/assets/img/shot-hito.png'
+- pwi = 'public/assets/img/shot-pw.png'
+- sci = 'public/assets/img/shot-sc.png'
+
+//- ARTICLES
+
+- art1 = {title: r, image: revolutioni, description: revolution, tech1: html, tech2: css, tech3: js, tech4: rd}
+- art2 = {title: h, image: hitoi, description: hito, tech1: css, tech2: js, tech3: html, tech4: rd}
+- art3 = {title: v, image: pwi, description: vem, tech1: html, tech2: css, tech3: js, tech4: rd}
+- art4 = {title: s, image: sci, description: sc, tech1: css, tech2: js, tech3: html, tech4: rd}
+- art5 = {title: p, image: pwi, description: pw, tech1: css, tech2: js, tech3: html, tech4: rd}
+
+each art in [ art1, art2, art3, art4, art5]
+	+article(art)
