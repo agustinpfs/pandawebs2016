@@ -103,18 +103,12 @@ module.exports = function template(locals) {
 var buf = [];
 var jade_mixins = {};
 var jade_interp;
-;var locals_for_with = (locals || {});(function (art1, art2, art3, art4, art5, css, h, hito, hitoi, html, js, p, pw, pwi, r, rd, revolution, revolutioni, s, sc, sci, undefined, v, vem) {
+;var locals_for_with = (locals || {});(function (art1, art2, art3, art4, art5, css, h, hito, hitoi, html, jq, js, node, p, pw, pw16, pwi, r, rd, revolution, revolutioni, s, sc, sci, stylus, undefined, v, vem, vemi) {
 buf.push("<div class=\"Portfolio\"><div class=\"Portfolio-header\"><div class=\"Header\"><div class=\"Header-logo\"><figure><img src=\"\" alt=\"\"/></figure><h1>Pandawebs</h1><span>desarrollo web</span></div><div class=\"Header-menu\"><nav><ul><li>link</li><li>link</li><li>link</li><li>link</li><li>link</li></ul></nav></div></div></div><div class=\"Portofolio-main\">");
 jade_mixins["article"] = jade_interp = function(art){
 var block = (this && this.block), attributes = (this && this.attributes) || {};
-buf.push("<div class=\"Article\"><div class=\"Article-shot\"><a href=\"\"><figure><img" + (jade.attr("src", art.image, true, false)) + "/></figure><div class=\"Article-shot_footer\"><span>" + (jade.escape(null == (jade_interp = art.title) ? "" : jade_interp)) + "</span></div><div class=\"Article-shot_opacity\"><span>VISITAR</span></div></a></div><div class=\"Article-description\"><h2>" + (jade.escape(null == (jade_interp = art.title) ? "" : jade_interp)) + "</h2><p>" + (jade.escape(null == (jade_interp = art.description) ? "" : jade_interp)) + "</p><h3>Tecnologías</h3><ul><li>" + (jade.escape(null == (jade_interp = art.tech1) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech2) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech3) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech4) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech5) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech1) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech2) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech3) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech4) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech5) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech1) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech2) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech3) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech4) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech5) ? "" : jade_interp)) + "</li></ul><button>visitar sitio</button><button>visitar código</button></div></div>");
+buf.push("<div class=\"Article\"><div class=\"Article-shot\"><a href=\"\"><figure><img" + (jade.attr("src", art.image, true, false)) + "/></figure><div class=\"Article-shot_footer\"><span>" + (jade.escape(null == (jade_interp = art.title) ? "" : jade_interp)) + "</span></div><div class=\"Article-shot_opacity\"><span>VISITAR</span></div></a></div><div class=\"Article-description\"><h2>" + (jade.escape(null == (jade_interp = art.title) ? "" : jade_interp)) + "</h2><p>" + (jade.escape(null == (jade_interp = art.description) ? "" : jade_interp)) + "</p><h3>Tecnologías</h3><ul><li>" + (jade.escape(null == (jade_interp = art.tech1) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech2) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech3) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech4) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech5) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech1) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech2) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech3) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech4) ? "" : jade_interp)) + "</li><li>" + (jade.escape(null == (jade_interp = art.tech5) ? "" : jade_interp)) + "</li></ul><button>visitar sitio</button><button>visitar código</button></div></div>");
 };
-buf.push("");
-revolution = "Sitio web adaptable a dispositivos móviles. Cuenta con animaciones en 3D y sitema interactivo para la elección del producto."
-hito = "Sitio basado en una navegación de transiciones por las diferentes secciones, invitando al usuario a un recorrido amigable de las páginas."
-vem = "Sit amet, consectetur adipisicing elit. Voluptatibus rem sit quisquam, illo sint, in dolore ipsum quos delectus fugit quam voluptatum voluptate dolorem ipsam."
-sc = "Consectetur adipisicing elit. Enim, esse. Perferendis animi qui cumque mollitia quaerat quas nostrum earum, voluptas labore vel! Voluptate porro molestiae voluptatem, quidem?"
-pw = "Consectetur adipisicing elit. Enim, esse. Perferendis animi qui cumque mollitia quaerat quas nostrum earum, voluptas labore vel! Voluptate porro molestiae voluptatem, quidem?"
 buf.push("");
 r = 'REVOLUTION'
 h = 'HITO'
@@ -122,15 +116,27 @@ v = 'VIVIR EN MEDITACIÓN'
 s = 'SANTIAGO CLAVIJO'
 p = 'PANDAWEBS'
 buf.push("");
-html = "HTML5"
-css = "CSS3"
-js = "Javascript"
-rd = "Responsive Design"
-buf.push("");
 revolutioni = 'public/assets/img/shot-rev.png'
 hitoi = 'public/assets/img/shot-hito.png'
 pwi = 'public/assets/img/shot-pw.png'
 sci = 'public/assets/img/shot-sc.png'
+vemi = 'public/assets/img/shot-vem.png'
+buf.push("");
+revolution = "Sitio web adaptable a dispositivos móviles. Cuenta con animaciones en 3D y sitema interactivo para la elección del producto."
+hito = "Sitio basado en una navegación de transiciones por las diferentes secciones, invitando al usuario a un recorrido amigable de las páginas."
+vem = "Sit amet, consectetur adipisicing elit. Voluptatibus rem sit quisquam, illo sint, in dolore ipsum quos delectus fugit quam voluptatum voluptate dolorem ipsam."
+sc = "Consectetur adipisicing elit. Enim, esse. Perferendis animi qui cumque mollitia quaerat quas nostrum earum, voluptas labore vel! Voluptate porro molestiae voluptatem, quidem?"
+pw = "Consectetur adipisicing elit. Enim, esse. Perferendis animi qui cumque mollitia quaerat quas nostrum earum, voluptas labore vel! Voluptate porro molestiae voluptatem, quidem?"
+pw16 = "Consectetur adipisicing elit. Enim, esse. Perferendis animi qui cumque mollitia quaerat quas nostrum earum, voluptas labore vel! Voluptate porro molestiae voluptatem, quidem?"
+buf.push("");
+html = "HTML5"
+css = "CSS3"
+js = "Javascript"
+rd = "Responsive Design"
+stylus = "Stylus"
+jade = "Jade"
+jq = "JQuery"
+node = "NodeJS"
 buf.push("");
 art1 = {title: r, image: revolutioni, description: revolution, tech1: html, tech2: css, tech3: js, tech4: rd}
 art2 = {title: h, image: hitoi, description: hito, tech1: css, tech2: js, tech3: html, tech4: rd}
@@ -159,7 +165,7 @@ jade_mixins["article"](art);
   }
 }).call(this);
 
-buf.push("</div><div class=\"Portofolio-footer\"></div></div>");}.call(this,"art1" in locals_for_with?locals_for_with.art1:typeof art1!=="undefined"?art1:undefined,"art2" in locals_for_with?locals_for_with.art2:typeof art2!=="undefined"?art2:undefined,"art3" in locals_for_with?locals_for_with.art3:typeof art3!=="undefined"?art3:undefined,"art4" in locals_for_with?locals_for_with.art4:typeof art4!=="undefined"?art4:undefined,"art5" in locals_for_with?locals_for_with.art5:typeof art5!=="undefined"?art5:undefined,"css" in locals_for_with?locals_for_with.css:typeof css!=="undefined"?css:undefined,"h" in locals_for_with?locals_for_with.h:typeof h!=="undefined"?h:undefined,"hito" in locals_for_with?locals_for_with.hito:typeof hito!=="undefined"?hito:undefined,"hitoi" in locals_for_with?locals_for_with.hitoi:typeof hitoi!=="undefined"?hitoi:undefined,"html" in locals_for_with?locals_for_with.html:typeof html!=="undefined"?html:undefined,"js" in locals_for_with?locals_for_with.js:typeof js!=="undefined"?js:undefined,"p" in locals_for_with?locals_for_with.p:typeof p!=="undefined"?p:undefined,"pw" in locals_for_with?locals_for_with.pw:typeof pw!=="undefined"?pw:undefined,"pwi" in locals_for_with?locals_for_with.pwi:typeof pwi!=="undefined"?pwi:undefined,"r" in locals_for_with?locals_for_with.r:typeof r!=="undefined"?r:undefined,"rd" in locals_for_with?locals_for_with.rd:typeof rd!=="undefined"?rd:undefined,"revolution" in locals_for_with?locals_for_with.revolution:typeof revolution!=="undefined"?revolution:undefined,"revolutioni" in locals_for_with?locals_for_with.revolutioni:typeof revolutioni!=="undefined"?revolutioni:undefined,"s" in locals_for_with?locals_for_with.s:typeof s!=="undefined"?s:undefined,"sc" in locals_for_with?locals_for_with.sc:typeof sc!=="undefined"?sc:undefined,"sci" in locals_for_with?locals_for_with.sci:typeof sci!=="undefined"?sci:undefined,"undefined" in locals_for_with?locals_for_with.undefined:typeof undefined!=="undefined"?undefined:undefined,"v" in locals_for_with?locals_for_with.v:typeof v!=="undefined"?v:undefined,"vem" in locals_for_with?locals_for_with.vem:typeof vem!=="undefined"?vem:undefined));;return buf.join("");
+buf.push("</div><div class=\"Portofolio-footer\"></div></div>");}.call(this,"art1" in locals_for_with?locals_for_with.art1:typeof art1!=="undefined"?art1:undefined,"art2" in locals_for_with?locals_for_with.art2:typeof art2!=="undefined"?art2:undefined,"art3" in locals_for_with?locals_for_with.art3:typeof art3!=="undefined"?art3:undefined,"art4" in locals_for_with?locals_for_with.art4:typeof art4!=="undefined"?art4:undefined,"art5" in locals_for_with?locals_for_with.art5:typeof art5!=="undefined"?art5:undefined,"css" in locals_for_with?locals_for_with.css:typeof css!=="undefined"?css:undefined,"h" in locals_for_with?locals_for_with.h:typeof h!=="undefined"?h:undefined,"hito" in locals_for_with?locals_for_with.hito:typeof hito!=="undefined"?hito:undefined,"hitoi" in locals_for_with?locals_for_with.hitoi:typeof hitoi!=="undefined"?hitoi:undefined,"html" in locals_for_with?locals_for_with.html:typeof html!=="undefined"?html:undefined,"jq" in locals_for_with?locals_for_with.jq:typeof jq!=="undefined"?jq:undefined,"js" in locals_for_with?locals_for_with.js:typeof js!=="undefined"?js:undefined,"node" in locals_for_with?locals_for_with.node:typeof node!=="undefined"?node:undefined,"p" in locals_for_with?locals_for_with.p:typeof p!=="undefined"?p:undefined,"pw" in locals_for_with?locals_for_with.pw:typeof pw!=="undefined"?pw:undefined,"pw16" in locals_for_with?locals_for_with.pw16:typeof pw16!=="undefined"?pw16:undefined,"pwi" in locals_for_with?locals_for_with.pwi:typeof pwi!=="undefined"?pwi:undefined,"r" in locals_for_with?locals_for_with.r:typeof r!=="undefined"?r:undefined,"rd" in locals_for_with?locals_for_with.rd:typeof rd!=="undefined"?rd:undefined,"revolution" in locals_for_with?locals_for_with.revolution:typeof revolution!=="undefined"?revolution:undefined,"revolutioni" in locals_for_with?locals_for_with.revolutioni:typeof revolutioni!=="undefined"?revolutioni:undefined,"s" in locals_for_with?locals_for_with.s:typeof s!=="undefined"?s:undefined,"sc" in locals_for_with?locals_for_with.sc:typeof sc!=="undefined"?sc:undefined,"sci" in locals_for_with?locals_for_with.sci:typeof sci!=="undefined"?sci:undefined,"stylus" in locals_for_with?locals_for_with.stylus:typeof stylus!=="undefined"?stylus:undefined,"undefined" in locals_for_with?locals_for_with.undefined:typeof undefined!=="undefined"?undefined:undefined,"v" in locals_for_with?locals_for_with.v:typeof v!=="undefined"?v:undefined,"vem" in locals_for_with?locals_for_with.vem:typeof vem!=="undefined"?vem:undefined,"vemi" in locals_for_with?locals_for_with.vemi:typeof vemi!=="undefined"?vemi:undefined));;return buf.join("");
 };
 },{"jade/runtime":8}],6:[function(require,module,exports){
 
