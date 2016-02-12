@@ -103,7 +103,7 @@ module.exports = function template(locals) {
 var buf = [];
 var jade_mixins = {};
 var jade_interp;
-;var locals_for_with = (locals || {});(function (art1, art2, art3, art4, art5, css, h, hito, hitoi, html, jq, js, node, p, pw, pw16, pwi, r, rd, revolution, revolutioni, s, sc, sci, stylus, undefined, v, vem, vemi) {
+;var locals_for_with = (locals || {});(function (art1, art2, art3, art4, art5, art6, css, h, hito, hitoi, html, jadeh, jq, js, node, p, p16, pw, pw16, pw16i, pwi, r, rd, revolution, revolutioni, s, sc, sci, stylus, undefined, v, vem, vemi) {
 buf.push("<div class=\"Portfolio\"><div class=\"Portfolio-header\"><div class=\"Header\"><div class=\"Header-logo\"><figure><img src=\"\" alt=\"\"/></figure><h1>Pandawebs</h1><span>desarrollo web</span></div><div class=\"Header-menu\"><nav><ul><li>link</li><li>link</li><li>link</li><li>link</li><li>link</li></ul></nav></div></div></div><div class=\"Portofolio-main\">");
 jade_mixins["article"] = jade_interp = function(art){
 var block = (this && this.block), attributes = (this && this.attributes) || {};
@@ -115,15 +115,17 @@ h = 'HITO'
 v = 'VIVIR EN MEDITACIÓN'
 s = 'SANTIAGO CLAVIJO'
 p = 'PANDAWEBS'
+p16 = 'PANDAWEBS2016'
 buf.push("");
 revolutioni = 'public/assets/img/shot-rev.png'
 hitoi = 'public/assets/img/shot-hito.png'
 pwi = 'public/assets/img/shot-pw.png'
 sci = 'public/assets/img/shot-sc.png'
+pw16i = 'public/assets/img/shot-pw2016.png'
 vemi = 'public/assets/img/shot-vem.png'
 buf.push("");
 revolution = "Sitio web adaptable a dispositivos móviles. Cuenta con animaciones en 3D y sitema interactivo para la elección del producto."
-hito = "Sitio basado en una navegación de transiciones por las diferentes secciones, invitando al usuario a un recorrido amigable de las páginas."
+hito = "Sitio basado en una navegación de transiciones por las diferentes secciones, invitando al usuario a un recorrido amigable y de impacto a través del total de las páginas."
 vem = "Sit amet, consectetur adipisicing elit. Voluptatibus rem sit quisquam, illo sint, in dolore ipsum quos delectus fugit quam voluptatum voluptate dolorem ipsam."
 sc = "Consectetur adipisicing elit. Enim, esse. Perferendis animi qui cumque mollitia quaerat quas nostrum earum, voluptas labore vel! Voluptate porro molestiae voluptatem, quidem?"
 pw = "Consectetur adipisicing elit. Enim, esse. Perferendis animi qui cumque mollitia quaerat quas nostrum earum, voluptas labore vel! Voluptate porro molestiae voluptatem, quidem?"
@@ -134,18 +136,19 @@ css = "CSS3"
 js = "Javascript"
 rd = "Responsive Design"
 stylus = "Stylus"
-jade = "Jade"
+jadeh = "Jade"
 jq = "JQuery"
 node = "NodeJS"
 buf.push("");
 art1 = {title: r, image: revolutioni, description: revolution, tech1: html, tech2: css, tech3: js, tech4: rd}
 art2 = {title: h, image: hitoi, description: hito, tech1: css, tech2: js, tech3: html, tech4: rd}
-art3 = {title: v, image: pwi, description: vem, tech1: html, tech2: css, tech3: js, tech4: rd}
-art4 = {title: s, image: sci, description: sc, tech1: css, tech2: js, tech3: html, tech4: rd}
+art3 = {title: v, image: vemi, description: vem, tech1: html, tech2: css, tech3: js, tech4: rd}
+art4 = {title: s, image: sci, description: sc, tech1: css, tech2: js, tech3: html, tech4: rd, tech5: node}
 art5 = {title: p, image: pwi, description: pw, tech1: css, tech2: js, tech3: html, tech4: rd}
-// iterate [ art1, art2, art3, art4, art5]
+art6 = {title: p16, image: pw16i, description: pw16, tech1: css, tech2: js, tech3: html, tech4: rd}
+// iterate [ art1, art2, art3, art4, art5, art6]
 ;(function(){
-  var $$obj = [ art1, art2, art3, art4, art5];
+  var $$obj = [ art1, art2, art3, art4, art5, art6];
   if ('number' == typeof $$obj.length) {
 
     for (var $index = 0, $$l = $$obj.length; $index < $$l; $index++) {
@@ -165,7 +168,7 @@ jade_mixins["article"](art);
   }
 }).call(this);
 
-buf.push("</div><div class=\"Portofolio-footer\"></div></div>");}.call(this,"art1" in locals_for_with?locals_for_with.art1:typeof art1!=="undefined"?art1:undefined,"art2" in locals_for_with?locals_for_with.art2:typeof art2!=="undefined"?art2:undefined,"art3" in locals_for_with?locals_for_with.art3:typeof art3!=="undefined"?art3:undefined,"art4" in locals_for_with?locals_for_with.art4:typeof art4!=="undefined"?art4:undefined,"art5" in locals_for_with?locals_for_with.art5:typeof art5!=="undefined"?art5:undefined,"css" in locals_for_with?locals_for_with.css:typeof css!=="undefined"?css:undefined,"h" in locals_for_with?locals_for_with.h:typeof h!=="undefined"?h:undefined,"hito" in locals_for_with?locals_for_with.hito:typeof hito!=="undefined"?hito:undefined,"hitoi" in locals_for_with?locals_for_with.hitoi:typeof hitoi!=="undefined"?hitoi:undefined,"html" in locals_for_with?locals_for_with.html:typeof html!=="undefined"?html:undefined,"jq" in locals_for_with?locals_for_with.jq:typeof jq!=="undefined"?jq:undefined,"js" in locals_for_with?locals_for_with.js:typeof js!=="undefined"?js:undefined,"node" in locals_for_with?locals_for_with.node:typeof node!=="undefined"?node:undefined,"p" in locals_for_with?locals_for_with.p:typeof p!=="undefined"?p:undefined,"pw" in locals_for_with?locals_for_with.pw:typeof pw!=="undefined"?pw:undefined,"pw16" in locals_for_with?locals_for_with.pw16:typeof pw16!=="undefined"?pw16:undefined,"pwi" in locals_for_with?locals_for_with.pwi:typeof pwi!=="undefined"?pwi:undefined,"r" in locals_for_with?locals_for_with.r:typeof r!=="undefined"?r:undefined,"rd" in locals_for_with?locals_for_with.rd:typeof rd!=="undefined"?rd:undefined,"revolution" in locals_for_with?locals_for_with.revolution:typeof revolution!=="undefined"?revolution:undefined,"revolutioni" in locals_for_with?locals_for_with.revolutioni:typeof revolutioni!=="undefined"?revolutioni:undefined,"s" in locals_for_with?locals_for_with.s:typeof s!=="undefined"?s:undefined,"sc" in locals_for_with?locals_for_with.sc:typeof sc!=="undefined"?sc:undefined,"sci" in locals_for_with?locals_for_with.sci:typeof sci!=="undefined"?sci:undefined,"stylus" in locals_for_with?locals_for_with.stylus:typeof stylus!=="undefined"?stylus:undefined,"undefined" in locals_for_with?locals_for_with.undefined:typeof undefined!=="undefined"?undefined:undefined,"v" in locals_for_with?locals_for_with.v:typeof v!=="undefined"?v:undefined,"vem" in locals_for_with?locals_for_with.vem:typeof vem!=="undefined"?vem:undefined,"vemi" in locals_for_with?locals_for_with.vemi:typeof vemi!=="undefined"?vemi:undefined));;return buf.join("");
+buf.push("</div><div class=\"Portofolio-footer\"></div></div>");}.call(this,"art1" in locals_for_with?locals_for_with.art1:typeof art1!=="undefined"?art1:undefined,"art2" in locals_for_with?locals_for_with.art2:typeof art2!=="undefined"?art2:undefined,"art3" in locals_for_with?locals_for_with.art3:typeof art3!=="undefined"?art3:undefined,"art4" in locals_for_with?locals_for_with.art4:typeof art4!=="undefined"?art4:undefined,"art5" in locals_for_with?locals_for_with.art5:typeof art5!=="undefined"?art5:undefined,"art6" in locals_for_with?locals_for_with.art6:typeof art6!=="undefined"?art6:undefined,"css" in locals_for_with?locals_for_with.css:typeof css!=="undefined"?css:undefined,"h" in locals_for_with?locals_for_with.h:typeof h!=="undefined"?h:undefined,"hito" in locals_for_with?locals_for_with.hito:typeof hito!=="undefined"?hito:undefined,"hitoi" in locals_for_with?locals_for_with.hitoi:typeof hitoi!=="undefined"?hitoi:undefined,"html" in locals_for_with?locals_for_with.html:typeof html!=="undefined"?html:undefined,"jadeh" in locals_for_with?locals_for_with.jadeh:typeof jadeh!=="undefined"?jadeh:undefined,"jq" in locals_for_with?locals_for_with.jq:typeof jq!=="undefined"?jq:undefined,"js" in locals_for_with?locals_for_with.js:typeof js!=="undefined"?js:undefined,"node" in locals_for_with?locals_for_with.node:typeof node!=="undefined"?node:undefined,"p" in locals_for_with?locals_for_with.p:typeof p!=="undefined"?p:undefined,"p16" in locals_for_with?locals_for_with.p16:typeof p16!=="undefined"?p16:undefined,"pw" in locals_for_with?locals_for_with.pw:typeof pw!=="undefined"?pw:undefined,"pw16" in locals_for_with?locals_for_with.pw16:typeof pw16!=="undefined"?pw16:undefined,"pw16i" in locals_for_with?locals_for_with.pw16i:typeof pw16i!=="undefined"?pw16i:undefined,"pwi" in locals_for_with?locals_for_with.pwi:typeof pwi!=="undefined"?pwi:undefined,"r" in locals_for_with?locals_for_with.r:typeof r!=="undefined"?r:undefined,"rd" in locals_for_with?locals_for_with.rd:typeof rd!=="undefined"?rd:undefined,"revolution" in locals_for_with?locals_for_with.revolution:typeof revolution!=="undefined"?revolution:undefined,"revolutioni" in locals_for_with?locals_for_with.revolutioni:typeof revolutioni!=="undefined"?revolutioni:undefined,"s" in locals_for_with?locals_for_with.s:typeof s!=="undefined"?s:undefined,"sc" in locals_for_with?locals_for_with.sc:typeof sc!=="undefined"?sc:undefined,"sci" in locals_for_with?locals_for_with.sci:typeof sci!=="undefined"?sci:undefined,"stylus" in locals_for_with?locals_for_with.stylus:typeof stylus!=="undefined"?stylus:undefined,"undefined" in locals_for_with?locals_for_with.undefined:typeof undefined!=="undefined"?undefined:undefined,"v" in locals_for_with?locals_for_with.v:typeof v!=="undefined"?v:undefined,"vem" in locals_for_with?locals_for_with.vem:typeof vem!=="undefined"?vem:undefined,"vemi" in locals_for_with?locals_for_with.vemi:typeof vemi!=="undefined"?vemi:undefined));;return buf.join("");
 };
 },{"jade/runtime":8}],6:[function(require,module,exports){
 
