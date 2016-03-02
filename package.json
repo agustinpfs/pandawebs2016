@@ -1,5 +1,7 @@
-{  
+{
   "dependencies": {
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
     "jquery": "^2.2.0",
     "page": "^1.6.4"
   },
@@ -24,5 +26,5 @@
     "styl": "stylus --use nib --compress --watch lib/style.styl --out public/css",
     "build-js": "NODE_PATH=. browserify -t jadeify ./lib/app.js > ./public/app.js",
     "serve": "http-server ."
-  },
+  }
 }

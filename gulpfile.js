@@ -52,7 +52,6 @@ gulp.task('js:watch', function() {
 		console.log('rebuild finished')
 		return bdle
 	})
-	// livereload es un singleton
 	return generateBundle(w).pipe(livereload({ start: true }))
 })
 
