@@ -59,9 +59,9 @@ gulp.task('watch', ['styl:watch', 'js:watch'])
 
 
 function styl() {
-	return gulp.src('./lib/app.styl')//entry point de styl
+	return gulp.src('./lib/style.styl')//entry point de styl
 		.pipe(stylus({ use: nib()}))//inicializo stylus con nib como plugin
-		.pipe(concat('app.css'))
+		.pipe(concat('style.css'))
 		.pipe(minify())
 		.pipe(gulp.dest('./public/css'))
 }
