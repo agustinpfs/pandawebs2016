@@ -6,21 +6,72 @@
 	align-items: center
 	&-logo
 		padding: .5rem
+		a 
+			color white
+			text-decoration: none
 		h1 
 			display: inline-block
 			margin-right .5rem
 		span
 			display: block
+	// &-nav
+	// 	position fixed
+	// 	right -100%
+	// 	top 65px
+	// 	transition .5s
+	// 	background-color #035103
+	// 	width 100%
+	// 	text-align center
 	&-menu
-		width: 40vw
+		margin auto 0
+		.check
+			display none
+			&:checked~				
+				nav
+					position absolute
+					right 0%
+				    transition .5s	
+				    width 100%
+				    z-index 30
 		ul 
-			display: flex 
-			justify-content: space-between
+			display flex
+		li 
 			margin-right .5rem
+			a 
+				color white
+				text-decoration: none
+			a:hover 
+				border-bottom 1px solid blue
+		label
+			display none
+			.icon-menu 
+				font-size 2rem
+				color white
+				cursor pointer
+				margin-right .5rem
+// 	&-menu
+// 		width: 40vw
+// 		ul 
+// 			display: flex 
+// 			justify-content: space-between
+// 			margin-right .5rem
 		
 @media (max-width:800px)
 	.Header
-		&-menu
-			display: none		
+		label
+			display block		
+		ul
+			flex-direction column
+			li 
+				margin-bottom 1rem
+		nav
+			position fixed
+			right -100%
+			top 65px
+			transition .5s
+			background-color black
+			width 100%
+			text-align center	
+
 
 	

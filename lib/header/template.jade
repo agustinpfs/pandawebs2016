@@ -1,15 +1,29 @@
 .Header
 	.Header-logo
-		figure
-			img(src="", alt="")
-		h1 PANDAWEBS
-		h1 | Portfolio
-		span desarrollo web
+		a(href="/")
+			figure
+				img(src="", alt="")
+			h1 PANDAWEBS
+			h1 | Portfolio
+			span desarrollo web
 	.Header-menu
+		label.Header-label(for="menu")
+			span.icon-menu
+		input.check#menu(type="checkbox")
 		nav
 			ul
-				li HOME
-				li BLOG
-				li TEMPLATES-WP
-				li CONTACTO
-				li PORTFOLIO
+				li 
+					a(href="/")
+						| HOME
+				li 
+					a(href="http://blog.pandawebs.net/")
+						| BLOG
+				li 
+					a(href="./template-wp")
+						| TEMPLATES-WP
+				li 
+					a(href="/")
+						| CONTACTO
+				li 
+					a(href="./portfolio")
+						| PORTFOLIO
