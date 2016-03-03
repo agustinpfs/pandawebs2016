@@ -6,7 +6,7 @@
 		color white
 	&-shot		
 		width: 250px
-		height: 250px
+		height: auto
 		position: relative
 		overflow: hidden		
 		cursor: pointer 
@@ -55,7 +55,11 @@
 			display: inline-block
 			margin .5rem .5rem 0 0
 			
-
+@media (max-width:1000px)	
+	.Article
+		width: 75%
+		margin 1rem auto
+		
 @media (max-width:800px)	
 	.Article
 		width: 95%
