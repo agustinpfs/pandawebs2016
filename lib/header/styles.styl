@@ -36,12 +36,17 @@
 		ul 
 			display flex
 		li 
-			margin-right .5rem
+			padding-right .5rem
+			padding-left .5rem
+			border-right 1px solid white
+		
 			a 
 				color white
 				text-decoration: none
 			a:hover 
 				border-bottom 1px solid blue
+		li:nth-last-child(1)
+			border-right 1px solid transparent
 		label
 			display none
 			.icon-menu 

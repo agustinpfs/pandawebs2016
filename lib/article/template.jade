@@ -19,11 +19,11 @@ mixin article(art)
 				li=art.tech3
 				li=art.tech4
 				li=art.tech5
-				li=art.tech1
-				li=art.tech2
-				li=art.tech3
-				li=art.tech4
-				li=art.tech5
+				li=art.tech6
+				li=art.tech7
+				li=art.tech8
+				li=art.tech9
+				li=art.tech10
 			button
 				a(href=art.link, target="blank")
 					| visitar sitio
@@ -106,7 +106,7 @@ mixin article(art)
 
 - art5 = {link: pwlk, title: p, image: pwi, description: pw, tech1: css, tech2: js, tech3: html, tech4: rd, code: codeno}
 
-- art6 = {link: pw16lk, title: p16, image: pw16i, description: pw16, tech1: css, tech2: js, tech3: html, tech4: rd, git: pw16git, code: codesi}
+- art6 = {link: pw16lk, title: p16, image: pw16i, description: pw16, tech1: css, tech2: js, tech3: html, tech4: rd, tech5: node, tech6: jadeh, tech7: stylus, git: pw16git, code: codesi}
 
 each art in [ art1, art2, art3, art4, art5, art6]
 	+article(art)
