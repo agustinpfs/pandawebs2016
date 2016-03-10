@@ -25,8 +25,7 @@ mixin article(art)
 				li=art.tech9
 				li=art.tech10
 			button
-				a(href=art.link, target="blank")
-					| visitar sitio
+				a(href=art.link, target="blank")=art.demo
 			button=art.gitsi
 				a(href=art.git, target="blank")=art.code
 					
@@ -37,12 +36,14 @@ mixin article(art)
 
 //- TITLES
 
-- r = 'REVOLUTION'
+//- r = 'REVOLUTION'
 - h = 'HITO'
 - v = 'VIVIR EN MEDITACIÓN'
 - s = 'SANTIAGO CLAVIJO'
 - p = 'PANDAWEBS'
 - p16 = 'PANDAWEBS2016'
+- f = 'FINA - THEME'
+- a = 'AUVI - THEME'
 
 //- IMAGES
 
@@ -52,6 +53,8 @@ mixin article(art)
 - sci = 'public/assets/img/shot-sc.png'
 - pw16i = 'public/assets/img/shot-pw2016.png'
 - vemi = 'public/assets/img/shot-vem.png'
+- finai = 'public/assets/img/shot-fina.png'
+- auvii = 'public/assets/img/shot-auvi.png'
 
 //- DESCRIPTION
 
@@ -61,6 +64,8 @@ mixin article(art)
 - sc = "Sitio político de noticias, actividades y participación ciudadana enfocado en aumentar contactos a través de la suscripción y descarga de material digital."
 - pw = "Website de venta de servicios web, invoca las relaciones productivas y de confianza hacia el objetivo del cliente."
 - pw16 = "Centro de información y servicios educativos para la exitosa finalización de los proyectos web del visitante, desarrollada con tecnología moderna garantiza una navegacion fluída y limpia."
+- fina = " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto labore omnis non commodi, distinctio ipsum magnam ipsam, alias, iure aperiam nostrum deleniti quo voluptatibus aut."
+- auvi = " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto labore omnis non commodi, distinctio ipsum magnam ipsam, alias, iure aperiam nostrum deleniti quo voluptatibus aut."
 
 
 //- LINKS
@@ -71,17 +76,23 @@ mixin article(art)
 - sclk = "http://legislatura.santiagoclavijo.com/"
 - pw16lk = "http://pandawebs.net/"
 - vemlk = "http://web.vivirenmeditacion.com/index.html"
+- finak = "http://wp-themes.pandawebs.net/fina"
+- auvik = "http://wp-themes.pandawebs.net/auvi"
 
 - rgit = "https://github.com/agustinpfs/t-shirt"
 - hgit = "https://github.com/agustinpfs/zapa"
 - pw16git = "https://github.com/agustinpfs/pandawebs2016"
+- finagit = "https://github.com/agustinpfs/Fina-Theme-wp"
+- auvigit = "https://github.com/agustinpfs/Auvi-Theme-wp"
 
 - codesi ="visitar código"
-- codesi ="visitar código"
+//- codesi ="visitar código"
 - codeno ="código no disponible"
-- codeno ="código no disponible"
-- codeno ="código no disponible"
-- codesi ="visitar código"
+//- codeno ="código no disponible"
+//- codeno ="código no disponible"
+//- codesi ="visitar código"
+- demo = "visitar sitio"
+- demodemo = "demo"
 
 //- TECHNOLOGIES
 
@@ -93,20 +104,32 @@ mixin article(art)
 - jadeh = "Jade"
 - jq = "JQuery"
 - node = "NodeJS"
+- pj = "PageJS"
 
 //- ARTICLES
+//- Revolution
+- art1 = {link: revlk, title: r, image: revolutioni, description: revolution, tech1: html, tech2: css, tech3: js, tech4: rd, git: rgit, code: codesi, demo: demo}
 
-- art1 = {link: revlk, title: r, image: revolutioni, description: revolution, tech1: html, tech2: css, tech3: js, tech4: rd, git: rgit, code: codesi}
+//- Hito
+- art2 = {link: hitolk, title: h, image: hitoi, description: hito, tech1: css, tech2: js, tech3: html, tech4: rd, tech5: jq, git: hgit, code: codesi, demo: demo}
 
-- art2 = {link: hitolk, title: h, image: hitoi, description: hito, tech1: css, tech2: js, tech3: html, tech4: rd, tech5: jq, git: hgit, code: codesi}
+//- Vivir en Meditación
+- art3 = {link: vemlk, title: v, image: vemi, description: vem, tech1: html, tech2: css, tech3: js, tech4: rd, code: codeno, demo: demo}
 
-- art3 = {link: vemlk, title: v, image: vemi, description: vem, tech1: html, tech2: css, tech3: js, tech4: rd, code: codeno}
+//- Santiago Clavijo
+- art4 = {link: sclk, title: s, image: sci, description: sc, tech1: css, tech2: js, tech3: html, tech4: rd, code: codeno, demo: demo}
 
-- art4 = {link: sclk, title: s, image: sci, description: sc, tech1: css, tech2: js, tech3: html, tech4: rd, tech5: node, code: codeno}
+//- Pandawebs-old
+- art5 = {link: pwlk, title: p, image: pwi, description: pw, tech1: css, tech2: js, tech3: html, tech4: rd, code: codeno, demo: demo}
 
-- art5 = {link: pwlk, title: p, image: pwi, description: pw, tech1: css, tech2: js, tech3: html, tech4: rd, code: codeno}
+//- Pandawebs2016
+- art6 = {link: pw16lk, title: p16, image: pw16i, description: pw16, tech1: css, tech2: js, tech3: html, tech4: rd, tech5: node, tech6: jadeh, tech7: stylus, tech8: pj, git: pw16git, code: codesi, demo: demo}
 
-- art6 = {link: pw16lk, title: p16, image: pw16i, description: pw16, tech1: css, tech2: js, tech3: html, tech4: rd, tech5: node, tech6: jadeh, tech7: stylus, git: pw16git, code: codesi}
+//- Fina wp-theme
+- art7 = {link: finak, title: f, image: finai, description: fina, tech1: css, tech2: js, tech3: html, tech4: rd, code: codesi, demo: demodemo}
 
-each art in [ art1, art2, art3, art4, art5, art6]
+//- Auvi wp-theme
+- art8 = {link: auvik, title: a, image: auvii, description: auvi, tech1: css, tech2: js, tech3: html, tech4: rd, code: codesi, demo: demodemo}
+
+each art in [ art1, art2, art3, art4, art5, art6, art7, art8]
 	+article(art)
